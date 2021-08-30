@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC: Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7514266742.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="icon">
+            <a href="#">
+                <svg id="d" viewBox="-50 0 600 512" width="110" xmlns="http://www.w3.org/2000/svg"><g id="D_1_"><g><path d="m237.754 512h-191.754v-512h186.676c40.526 0 70.899 3.206 92.853 9.802l.051.015c104.562 31.82 140.42 140.539 140.42 250.767 0 125.138-49.859 210.552-140.394 240.507-22.503 7.347-51.222 10.909-87.852 10.909zm-161.754-30h161.754c32.954 0 59.36-3.166 78.485-9.409 98.974-32.748 119.761-133.367 119.761-212.007 0-69.384-15.481-190.488-119.122-222.056-18.847-5.659-47.176-8.528-84.202-8.528h-156.676zm149.061-50.873h-85.131v-349.926h57.205c39.712 0 66.026 1.622 80.439 4.958 77.196 17.312 91.322 91.773 91.322 170.169 0 75.138-9.542 150.692-83.25 169.73-12.975 3.411-32.794 5.069-60.585 5.069zm-55.131-30h55.131c24.854 0 42.68-1.376 52.981-4.089l.073-.019c50.445-13.012 60.781-65.654 60.781-140.691 0-89.284-19.68-130.107-67.927-140.905l-.119-.027c-8.232-1.913-27.704-4.194-73.716-4.194h-27.204z"/></g></g></svg>            
+                <svg id="g" viewBox="0 0 600 512" width="110" xmlns="http://www.w3.org/2000/svg"><g><path d="m147.682 173.862c24.86-32.704 64.162-53.862 108.318-53.862 36.326 0 70.479 14.146 96.167 39.833l10.606 10.606 84.853-84.852-10.606-10.606c-48.352-48.352-112.639-74.981-181.02-74.981-68.38 0-132.667 26.629-181.02 74.98-4.389 4.39-8.594 8.914-12.622 13.557z"/><path d="m423.462 449.642c4.643-4.028 9.168-8.233 13.558-12.622 48.351-48.353 74.98-112.64 74.98-181.02 0-15.575-1.41-31.179-4.192-46.377l-2.251-12.299h-264.557v120h136.452c-9.437 18.773-22.936 34.779-39.199 47.109z"/><path d="m311.602 380.208c-17.091 7.623-35.947 11.792-55.602 11.792-44.156 0-83.458-21.158-108.318-53.862l-85.324 85.324c4.028 4.643 8.233 9.168 12.622 13.557 48.353 48.352 112.64 74.981 181.02 74.981 51.916 0 101.464-15.363 143.479-43.915z"/><path d="m131.863 311.531c-7.619-16.965-11.863-35.761-11.863-55.531s4.244-38.566 11.863-55.531l-87.948-87.948c-28.552 42.015-43.915 91.563-43.915 143.479s15.363 101.464 43.915 143.479z"/></g></svg>
+            </a>
+        </div>
+        <h1 id="title">D'Games</h1>
+        <p id="description">Thank you for taking the time to help us improve our game.</p>
+    </header>
+        
+    <form id="survey-form" onsubmit="myFunction()">
+        <div class="form-group">
+            <label id="name-label" for="name">* Name : </label>
+            <input type="text" id="name" class="input-box" placeholder=" Enter Your Name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">* Email : </label>
+            <input type="email" id="email" name="email" class="input-box" placeholder="Enter Your Email" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">* Age : </label>
+            <input type="number" id="number" class="input-box" placeholder=" Enter Your Age" min="6" max="100" required>
+        </div>
+        <div class="form-group">
+            <label for="dropdown"> Gender : </label>
+            <select name="gender" id="dropdown" class="input-box">
+                <option value="Man" selected>Male</option>
+                <option value="Woman">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+        <label>Have you play any game from D'Games :</label>
+        <div class="check-radio">
+            <label><input type="radio" name="play" value="yes" checked>Yes</label>
+            <label><input type="radio" name="play" value="no">No</label>
+            <label><input type="radio" name="play" value="no but seen">Not yet but i've seen in somewhere.</label>
+        </div>
+        </div>
+        
+        <div class="form-group">
+            <label>How do you think about D'Games :</label>
+            <div class="check-radio">
+                <label><input type="radio" name="experience" value="awesome" checked>It's awesome</label>
+                <label><input type="radio" name="experience" value="good">It's good</label>
+                <label><input type="radio" name="experience" value="bad">I'ts bad</label>
+                <label><input type="radio" name="experience" value="haven't play">Haven't played yet</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="game-type">What is your favorite game type : </label>
+            <div class="check-radio">
+                <label><input type="checkbox" name="game-type" value="action-adventure" checked/>Action/Adventure</label>
+                <label><input type="checkbox" name="game-type" value="arcade"/>Arcade</label>
+                <label><input type="checkbox" name="game-type" value="boardgames"/>Boardgames</label>
+                <label><input type="checkbox" name="game-type" value="card-casino"/>Card/Casino</label>
+                <label><input type="checkbox" name="game-type" value="music"/>Music games</label>
+                <label><input type="checkbox" name="game-type" value="puzzle-strategy"/>Puzzle/Strategy</label>
+                <label><input type="checkbox" name="game-type" value="rpg"/>RPG</label>
+                <label><input type="checkbox" name="game-type" value="sport"/>Sports</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="device">What device do you usually use to play games : </label>
+            <select name="device" id="device" class="input-box">
+                <option value="default" selected disabled>Select an Option</option>
+                <option value="ios">Ios</option>
+                <option value="android">Android</option>
+                <option value="pc">PC</option>
+                <option value="Console">Console</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="game-type">What is your favorite features from D'Games : </label>
+            <div class="check-radio">
+                <label><input type="checkbox" name="fav-features" value="graphic" checked>Graphics</label>
+                <label><input type="checkbox" name="fav-features" value="gameplay">Gameplay</label>
+                <label><input type="checkbox" name="fav-features" value="story">Story</label>
+                <label><input type="checkbox" name="fav-features" value="character">Character</label>
+                <label><input type="checkbox" name="fav-features" value="events">Events</label>
+                <label><input type="checkbox" name="fav-features" value="summon">Summon Animations</label>
+            </div>
+        </div>
+        
+        <label>If you've never tried playing, would you like to try d'games?</label>
+        <label class="rules">(You can skip skip, if you have play) </label>
+        <div class="check-radio">
+            <label><input type="radio" name="tried" value="yes">Yes</label>
+            <label><input type="radio" name="tried" value="no">No</label>
+            <label><input type="radio" name="tried" value="maybe">Maybe</label>
+        </div>
+        </div>
+
+        <div class="form-group">
+            <label for="comments">Any Comments or Suggestions : </label>
+            <textarea name="comments" id="comments" class="input-box" cols="30" rows="30" placeholder="Enter Your Comments Here.."></textarea>
+        </div>
+        
+        <div class="container">
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+
+    <footer class="footer">
+        <p>Created by
+            <a href="https://www.freecodecamp.org/denurhadiputra">Dede Nurhadi Putra<i class="fab fa-free-code-camp"></i></a>
+        </p>
+    </footer>
+
+    <script>
+        function myFunction(){
+            alert("Thank You for Submit");
+        }
+    </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    
+</body>
+</html>

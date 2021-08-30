@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS & Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>D'Bakery</title>
+</head>
+
+<body>
+<!-- Header -->
+<div id="header">
+    <img src="https://images.pexels.com/photos/7474289/pexels-photo-7474289.jpeg?cs=srgb&dl=pexels-valeria-boltneva-7474289.jpg&fm=jpg" alt="" id="header-img">
+    <nav id="nav-bar" class="navbar fixed-top navbar-expand-lg navbar-dark shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="display: inline-grid; padding-bottom:20px ;">
+                <svg id="Capa_1" height="50px" viewBox="-450 0 1500 700" xmlns="http://www.w3.org/2000/svg"><g><path d="m512 256c0 141.38-114.62 256-256 256-24.75 0-48.68-3.51-71.32-10.07-61.14-17.7-57.237-106.106-90.247-158.886-12.37-19.76-77.723 7.186-84.363-15.714v-.01c-6.56-22.64-10.07-46.57-10.07-71.32 0-141.38 114.62-256 256-256 31.35 0 61.38 5.64 89.14 15.96h.01c19.08 7.09 37.08 16.39 53.7 27.58 44.07 29.69 78.4 72.73 97.19 123.32 10.32 27.76 15.96 57.79 15.96 89.14z" fill="#d56b3d"/><g><path d="m496.04 166.86c-15.58 67-61.22 145.33-130.51 214.62-57.93 57.93-122.19 99.33-180.85 120.45-84.04-24.33-150.28-90.57-174.61-174.61 21.12-58.66 62.52-122.91 120.45-180.84 69.3-69.3 147.63-114.94 214.63-130.52 53.2-12.38 99.25-5.8 127.97 22.92 28.73 28.72 35.3 74.78 22.92 127.98z" fill="#ffd064"/><g fill="#e7a52e"><path d="m473.12 38.87c-12.91-12.91-39.48-10.33-74.27 4.67-56.71 24.46-135.29 81.89-212.33 158.93-67 67.01-119.17 135.17-147.7 189.1-12.37-19.76-22.11-41.34-28.75-64.24 21.12-58.66 62.51-122.91 120.45-180.85 69.3-69.3 147.62-114.93 214.62-130.52h.01c53.2-12.38 99.25-5.81 127.97 22.91z"/><g><path d="m433.965 244.093c22.021-22.021 2.7-77.046-43.155-122.901s-100.88-65.177-122.901-43.156"/><path d="m335.014 343.044c22.021-22.021 2.7-77.046-43.155-122.901s-100.88-65.176-122.901-43.155"/><path d="m236.062 441.996c22.021-22.021 2.7-77.046-43.155-122.901s-100.88-65.176-122.901-43.155"/></g></g></g><g fill="#e7a52e"><g><circle cx="68.134" cy="389.15" r="12.189"/><circle cx="99.786" cy="370.015" r="12.189"/><circle cx="99.522" cy="405.172" r="12.189"/></g><g><circle cx="376.027" cy="276.085" r="12.189"/><circle cx="407.678" cy="256.95" r="12.189"/><circle cx="407.415" cy="292.108" r="12.189"/></g></g></g></svg>
+            D' Bakery
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0 col-9" id="navbarSupportedContent">
+            <ul class="navbar-nav text-dark me-auto w-75 justify-content-center" id="navbar">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="search-container d-flex">
+                <form class="search-box d-flex w-75">
+                    <input class="form-control border-0 shadow-dark" type="search" placeholder="Search" aria-label="Search">
+                    <span class="btn btn-outline-dark border-0" type="submit">
+                        <i class="bi bi-search"></i>
+                    </span>
+                </form>
+            </div>
+                <a class="nav-item" href="#account">
+                    <i class="bi bi-person-circle text-center text-light ms-auto" style="font-size: 1.5rem; padding: 10px 3px 10px 5px; opacity: 0.8;"></i>
+                </a>
+                <a class="nav-item" href="#cart">
+                    <i class="bi bi-basket text-start text-light ms-auto" style="font-size: 1.5rem; padding: 10px 5px 10px 1px; opacity: 0.8"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!-- Jumbotron -->
+    <section class="jumbotron text-center" id="home">
+        <h1> ~ Great taste in every bite ~ </h1>
+        <div class="divider"></div>
+        <p class="description">This is Photoshop's version of Lorem Ipsum. Proin gravidanibh vel velit auctor aliquet. sem nibh id elit.Ferri graeci beque zril alienum pri cu.</p>
+    </section>
+
+<!-- Menu -->
+    <section id="menu">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2>Great taste – quality service.</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1618417759309-bf38129c6e37?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="Menu1">
+                        <div class="card-body">
+                            <p class="card-text text-center">Croissant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1527156231393-7023794f363c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1554&q=80" class="card-img-top" alt="Menu2">
+                        <div class="card-body">
+                            <p class="card-text text-center">Cold Brew Coffee</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="badges">
+                            <svg id="Layer_1" class="badge" enable-background="new 0 0 511.999 511.999" height="120" viewBox="0 0 511.999 511.999" width="auto" xmlns="http://www.w3.org/2000/svg"><g><g><path d="m151.058 291.986h-20c-5.522 0-10 4.477-10 10v80c0 5.523 4.478 10 10 10h20c25.838.09 39.541-31.084 22.343-50 17.205-18.924 3.482-50.094-22.343-50zm0 80h-10v-20h10c13.27.551 13.259 19.454 0 20zm0-40h-10v-20h10c13.269.551 13.26 19.454 0 20z"/><path d="m241.058 311.986c13.268-.529 13.258-19.476 0-20h-35c-5.522 0-10 4.477-10 10v80c0 5.523 4.478 10 10 10h35c13.268-.529 13.258-19.476 0-20h-25v-20h11c13.268-.529 13.258-19.476 0-20h-11v-20z"/><path d="m302.644 334.948-10.634-4.404c-4.916-2.036-7.258-7.692-5.222-12.609 2.036-4.916 7.695-7.258 12.608-5.223l5.316 2.202c5.104 2.114 10.952-.309 13.066-5.412 2.113-5.102-.31-10.952-5.412-13.065l-5.317-2.203c-15.109-6.256-32.484.945-38.74 16.048-6.256 15.105.942 32.483 16.047 38.74l10.634 4.404c4.916 2.036 7.258 7.693 5.222 12.61-.978 2.361-2.835 4.208-5.23 5.2-2.396.993-5.014 1-7.378.021l-5.317-2.202c-5.099-2.11-10.952.31-13.065 5.413s.311 10.952 5.413 13.065l5.317 2.202c7.311 3.028 15.367 3.009 22.684-.022 7.332-3.037 13.034-8.729 16.056-16.025 6.255-15.103-.944-32.482-16.048-38.74z"/><path d="m380.942 291.986h-35c-13.268.529-13.258 19.476 0 20h7.5v70c.528 13.268 19.476 13.258 20 0v-70h7.5c13.268-.528 13.258-19.476 0-20z"/><path d="m88.142 454.95-10.635-4.404c-4.916-2.036-7.259-7.693-5.222-12.609.978-2.361 2.836-4.208 5.231-5.201 2.397-.993 5.017-1 7.377-.022l5.316 2.202c5.104 2.115 10.952-.31 13.066-5.412 2.113-5.102-.31-10.952-5.412-13.065l-5.317-2.202c-7.298-3.023-15.354-3.015-22.684.022-24.288 9.923-24.24 44.79-.01 54.766l10.635 4.404c4.916 2.036 7.258 7.693 5.222 12.609-.978 2.361-2.836 4.208-5.231 5.201-2.396.993-5.016 1-7.377.022l-5.316-2.202c-5.104-2.112-10.952.31-13.066 5.412-2.113 5.102.31 10.952 5.412 13.065l5.317 2.202c7.311 3.028 15.367 3.009 22.684-.022 24.288-9.924 24.24-44.79.01-54.766z"/><path d="m235.438 491.987h-25v-70c-.528-13.268-19.476-13.258-20 0v80c0 5.523 4.478 10 10 10h35c13.268-.528 13.258-19.476 0-20z"/><path d="m165.438 431.987c13.268-.529 13.258-19.476 0-20h-35c-5.522 0-10 4.477-10 10v80c0 5.523 4.478 10 10 10h35c13.268-.529 13.258-19.476 0-20h-25v-20h11c13.268-.529 13.258-19.476 0-20h-11v-20z"/><path d="m305.439 491.987h-25v-70c-.529-13.268-19.476-13.258-20 0v80c0 5.523 4.478 10 10 10h35c13.268-.528 13.258-19.476 0-20z"/><path d="m375.44 431.987c13.268-.529 13.258-19.476 0-20h-35c-5.522 0-10 4.477-10 10v80c0 5.523 4.478 10 10 10h35c13.268-.529 13.258-19.476 0-20h-25v-20h11c13.268-.529 13.258-19.476 0-20h-11v-20z"/><path d="m444.791 468.327c26.911-14.916 16.833-55.972-14.35-56.34h-20c-5.522 0-10 4.477-10 10v80c.528 13.268 19.476 13.258 20 0v-30h3.82l17.236 34.472c6.43 11.662 23.359 3.09 17.889-8.944zm-24.35-36.34h10c13.203.541 13.29 19.319.112 19.999-.105-.001-.211-.001-.316.001h-9.796z"/><path d="m392.371 126.27-11.309-19.832-.111-20.814c.654-10.421-4.697-20.494-13.727-25.764l-19.627-11.471-11.474-19.631c-4.926-8.42-14.081-13.674-23.878-13.713l-22.698-.12-19.471-11.105c-8.534-5.015-19.166-5.101-27.792-.205l-19.831 11.31-20.813.11c-10.411-.659-20.494 4.697-25.765 13.727l-11.472 19.627-19.63 11.473c-8.421 4.925-13.676 14.08-13.714 23.878l-.12 22.697-11.104 19.473c-5.015 8.534-5.1 19.166-.205 27.791l11.31 19.831.11 20.814c-.654 10.422 4.698 20.496 13.727 25.764l19.627 11.471 11.474 19.632c4.926 8.419 14.08 13.673 23.878 13.712l22.697.121 19.467 11.101c4.331 2.547 9.202 3.823 14.078 3.823 4.732 0 9.47-1.203 13.72-3.614l19.831-11.31 20.813-.111c10.41.656 20.495-4.698 25.765-13.726l11.472-19.627 19.63-11.474c8.419-4.924 13.674-14.079 13.714-23.877l.121-22.698 11.104-19.472c5.012-8.533 5.097-19.167.203-27.791zm-17.462 17.681c-.027.047-.056.094-.082.142l-12.438 21.811c-.852 1.494-1.305 3.181-1.313 4.9l-.135 25.333c-.011 2.769-1.472 5.339-3.809 6.706l-21.892 12.795c-1.484.867-2.72 2.103-3.588 3.587l-12.798 21.896c-1.525 2.613-4.352 4.082-7.369 3.843-.284-.023-.565-.032-.854-.032l-23.814.127c-1.719.009-3.406.461-4.9 1.313l-22.091 12.598c-2.414 1.369-5.398 1.34-7.792-.077-.047-.028-.095-.056-.142-.083l-21.812-12.438c-1.494-.852-3.182-1.304-4.9-1.313l-25.334-.135c-2.769-.011-5.338-1.472-6.705-3.808l-12.795-21.892c-.868-1.484-2.104-2.72-3.588-3.587l-21.897-12.799c-2.612-1.524-4.085-4.348-3.843-7.369.023-.283.033-.567.032-.852l-.126-23.815c-.009-1.72-.462-3.408-1.313-4.901l-12.599-22.091c-1.369-2.413-1.339-5.398.078-7.792.027-.047.056-.094.082-.142l12.438-21.812c.852-1.494 1.305-3.182 1.313-4.901l.134-25.333c.011-2.768 1.471-5.337 3.809-6.705l21.892-12.795c1.484-.867 2.72-2.103 3.588-3.587l12.798-21.896c1.517-2.619 4.39-4.093 7.369-3.844.283.023.566.029.853.032l23.814-.126c1.72-.009 3.407-.461 4.901-1.313l22.091-12.599c2.413-1.369 5.397-1.339 7.793.078.046.028.094.055.141.082l21.811 12.438c1.494.852 3.182 1.304 4.901 1.313l25.335.134c2.768.011 5.337 1.471 6.704 3.808l12.795 21.892c.868 1.484 2.104 2.72 3.588 3.588l21.896 12.798c2.613 1.525 4.086 4.349 3.844 7.368-.023.284-.033.569-.032.854l.127 23.815c.009 1.719.462 3.407 1.313 4.9l12.598 22.092c1.37 2.415 1.341 5.401-.077 7.794z"/><path d="m85.998 149.986c13.268-.529 13.258-19.476 0-20h-27.501c-13.268.529-13.258 19.476 0 20z"/><path d="m103.775 216.326-23.816 13.75c-4.783 2.761-6.422 8.877-3.66 13.66 2.777 4.827 8.962 6.397 13.66 3.66l23.816-13.75c4.783-2.761 6.422-8.877 3.66-13.66-2.762-4.782-8.876-6.422-13.66-3.66z"/><path d="m427.032 248.739c3.456 0 6.818-1.794 8.67-5.002 2.762-4.783 1.123-10.899-3.66-13.66l-23.816-13.75c-4.785-2.763-10.899-1.122-13.66 3.66-2.762 4.783-1.123 10.899 3.66 13.66l23.816 13.75c1.575.909 3.293 1.342 4.99 1.342z"/><path d="m453.501 129.986h-27.501c-13.268.529-13.258 19.476 0 20h27.501c13.268-.529 13.258-19.477 0-20z"/><path d="m403.235 64.987c1.696 0 3.416-.433 4.99-1.342l23.816-13.75c4.783-2.761 6.422-8.877 3.66-13.66-2.761-4.783-8.877-6.422-13.66-3.66l-23.816 13.75c-4.783 2.761-6.422 8.877-3.66 13.66 1.852 3.209 5.213 5.002 8.67 5.002z"/><path d="m79.958 49.895 23.816 13.75c4.698 2.737 10.884 1.166 13.66-3.66 2.762-4.783 1.123-10.899-3.66-13.66l-23.816-13.75c-4.785-2.763-10.9-1.123-13.66 3.66-2.761 4.782-1.123 10.899 3.66 13.66z"/><path d="m266 59.985h-20c-33.833.644-41.305 46.707-10 58.287v71.713c1.653 39.809 58.362 39.778 60 0v-5.003c-.529-13.268-19.476-13.258-20 0v5.003c-.551 13.27-19.454 13.259-20 0v-80c0-5.523-4.478-10-10-10-5.515 0-10.001-4.486-10.001-10s4.486-10 10.001-10h20c5.514 0 10 4.486 10 10v4.997c.528 13.268 19.476 13.258 20 0v-4.997c0-16.542-13.458-30-30-30z"/><path d="m286 129.982c-5.522 0-10 4.48-10 10.003.527 13.265 19.475 13.26 20 0v-.007c0-5.523-4.477-9.996-10-9.996z"/></g></g></svg>
+                        </div>
+                        <img src="https://cdn.pixabay.com/photo/2020/04/24/15/00/chocolate-bread-5087206_960_720.jpg" class="card-img-top" alt="Menu3">
+                        <div class="card-body">
+                            <p class="card-text text-center">Pain au Chocolat</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="Menu3">
+                        <div class="card-body">
+                            <p class="card-text text-center">Sourdough Bread</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" class="card-img-top" alt="Menu5">
+                        <div class="card-body">
+                            <p class="card-text text-center">Cappucino</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- video -->
+<section>
+    <div class="container" style="width: auto;">
+        <iframe id="video" height="315" src="https://www.youtube.com/embed/_om7--IxCIY?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f5cf8e" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</section>
+
+<!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2>About Our Bakery</h2>
+                </div>
+            </div>
+            <div class="row justify-content-sm-around fs-5">
+                <div class="col-md-5 mb-3 lh-base" style="text-align: justify;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius minus esse dolorum expedita repellat consectetur! Laudantium repellendus, voluptas facilis enim porro quasi voluptate! Ex repellendus, perspiciatis veniam exercitationem deserunt ab.
+                    <br>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quae quos distinctio fugiat minima repellat optio sint consequuntur nobis aut ipsa omnis.
+                </div>
+                <div class="col-md-5 mb-2">
+                    <img class="our-bakery" src="https://images.unsplash.com/photo-1511018556340-d16986a1c194?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="Bakery Shop">
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary justify-content-center">Read more..</button>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f5cf8e" fill-opacity="1" d="M0,224L40,229.3C80,235,160,245,240,224C320,203,400,149,480,149.3C560,149,640,203,720,202.7C800,203,880,149,960,133.3C1040,117,1120,139,1200,122.7C1280,107,1360,53,1400,26.7L1440,0L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col">
+                    <h2>Feel a sweet experience</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="bg-danger mt-5 p-3 text-center">
+                        <label for="getupdates">Get Notified For Discounts And New Menu Items !</label>
+                        <form id="form" action="https://www.freecodecamp.com/email-submit">
+                            <div class="input-group mb-2 align-center">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="height: 40px;">@</div>
+                                </div>
+                                <input id="email" name="email" type="email" class="form-control" placeholder="Ente your email.." >
+                                <a href="https://www.freecodecamp.com/email-submit">
+                                    <div class="btn btn-outline-light ml-4 mr-auto">
+                                    <i class="bi bi-cursor"></i> 
+                                    <input id="submit" type="submit" value="Subscribe">
+                                    </div>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 250">
+            <path fill="#af762f" fill-opacity="1" d="M0,224L60,224C120,224,240,224,360,218.7C480,213,600,203,720,208C840,213,960,235,1080,240C1200,245,1320,235,1380,229.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        </svg>
+    </section>
+    <footer class="text-center pb-3 shadow-sm">
+        <p>Created by
+            <a href="https://www.freecodecamp.org/denurhadiputra">Dede Nurhadi Putra<i class="fab fa-free-code-camp"></i></a>
+        </p>
+    </footer>
+
+<!-- freeCodeCamp tester -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/7514266742.js" crossorigin="anonymous"></script>
+    <script>
+        const navbar = document.querySelector("#navbar");
+        navbar.addEventListener('click', function(e) {
+            const targetNavbar = e.target;
+            if (targetNavbar.classList.contains('nav-link')) {
+                const navbarLinkActive = document.querySelector("ul#navbar li a.active");
+                if (navbarLinkActive !== null && targetNavbar.getAttribute('href') !== navbarLinkActive.getAttribute('href')) {
+                    navbarLinkActive.classList.remove('active');
+                }
+                targetNavbar.classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>

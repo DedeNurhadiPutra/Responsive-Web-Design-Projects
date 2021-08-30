@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E0DCD9;
+    text-align: center;
+    line-height: 1.8;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background-color: #AA9965;
+    padding: 20px auto 0 auto;
+    margin: 10px;
+    color: #1E2428;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+}
+
+#title {
+    padding: 50px 20px 0 20px;
+    font-size: 2.5em;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.description {
+    margin-top: -10px;
+    font-size: 1.3em;
+}
+
+figure {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 15px;
+    border-radius: 0.5em;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+    align-content: center;
+    margin: 30px auto 5px auto;
+    display: block;
+}
+
+#img-caption {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+section {
+    display: block;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    padding: 25px 0 20px 0;
+}
+
+ul {
+    text-align: left;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+li {
+    width: auto;
+    height: max-content;
+    margin: 15px auto;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+h4 {
+    padding-bottom: 30px;
+    height: max-content;
+}
+
+blockquote {
+    background-color: #7E7A5A;
+    width: auto;
+    height: max-content;
+    border: 1px solid #414538;
+    font-style: italic;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+footer {
+    font-family: 'ZCOOL XiaoWei', serif;
+    font-size: 1.3em;
+    background-color: #E0DCD9;
+    display:inline-block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+    margin-top: -10px;
+}
+
+footer a, i {
+    color: #3148ce;
+    padding-left: 5px;
+    text-shadow: 0 0 5px #22a1d3;
+}

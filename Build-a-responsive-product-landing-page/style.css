@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=STIX+Two+Text:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: #FBFAF6;
+}
+
+body {
+    color: #000;
+    background-color: #FBFAF6;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+/* Header */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+    line-height: 0;
+    font-family: 'Questrial', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 0.5px rgba(0, 0, 0, .7);
+}
+
+.navbar svg {
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .7));
+}
+
+.navbar-brand:hover {
+    text-shadow: 2px 2px 0.5px rgba(85, 81, 81, 0.7);
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+.search-box {
+    border: 1px solid #202020;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.1rem black;
+}
+
+.nav-item {
+    padding: 0 5px 0 5px;
+    font-size: 18px;
+}
+
+.nav-item:hover {
+    background-color: rgba(355, 355, 355, 0.2);
+}
+
+/* Jumbotron */
+.jumbotron {
+    padding-top: 7rem;
+    background-color: #CA9456;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80) no-repeat;
+    background-size: contain, cover;
+    background-attachment: fixed;
+    min-height: 680px;
+}
+
+
+h1 {
+    color: #FBFAF6;
+    font-family: 'STIX Two Text', serif;
+    text-transform: capitalize;
+    font-size: 40px;
+    width: 100%;
+    height: max-content;
+    margin: auto;
+    position: relative;
+    top: 4rem;
+}
+
+.divider {
+    width: 40%;
+    height: 0px;
+    border: 1px solid rgba(355, 355, 355, 0.7);
+    position: relative;
+    top: 4.5rem;
+    margin: auto;
+}
+
+.description {
+    color: #FBFAF6;
+    position: relative;
+    top: 5rem;
+    margin: auto;
+    width: 38%;
+}
+
+/* Menu */
+.col {
+    padding: 2rem 0;
+}
+
+.card-img-top {
+    height: auto;
+}
+
+.card .badges svg {
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 0%;
+    left: 90%;
+    width: auto;
+    fill: orange;
+}
+
+.badges {
+    z-index: 1;
+}
+
+iframe {
+    display: block;
+    width: 600px;
+    height: 480px;
+    margin: auto;
+}
+
+/* About */
+#about {
+    width: 100%;
+    padding-top: 7rem;
+    background-color: #f5cf8e;
+    min-height: 680px;
+}
+.our-bakery {
+    width: -webkit-fill-available
+}
+
+#about button {
+    position: relative;
+    bottom: auto;
+    left: 18%;
+}
+
+/* Contact */
+#contact {
+    padding-top: 0;
+    background-color: #CA9456;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://images.pexels.com/photos/7629782/pexels-photo-7629782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) no-repeat;
+    background-size: contain, cover;
+    background-attachment: fixed;
+}
+
+#contact h2, #contact label {
+    color: white;
+}
+
+#submit {
+    background-color: #dc3545;
+    border: none;
+}
+
+#submit:hover {
+    background-color: #fff;
+}
+
+.search-container, .search-box {
+    margin-left: auto;
+}
+
+/* media */
+@media (min-width : 300px) and (max-width: 700px) {
+    .description{
+        width: 85%;
+    }
+    .card p {
+        width: 100%;
+        padding: 0 20px;
+    }
+    iframe {
+        width: 90%;
+    }
+    .card .badges svg {
+        width: 30%;
+        position: absolute;
+        top: 3%;
+        left: 90%;
+    }
+    #menu {
+        width: 90%;
+        margin: auto;
+    }
+    #about{
+        height: 1050px;
+    }
+    #about button {
+        top: 20px;
+        left: 33%;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 1000px) {
+    .navbar {
+      background-color: rgba(0, 0, 0);
+    }
+    .search-container,
+    .search-box {
+      margin-left: 0;
+    }
+    .search-box .btn {
+      background-color: white;
+      position: fixed;
+    }
+    .search-box .form-control {
+      margin-left: 40px;
+    }
+  } ;
+
+footer {
+    background-color: #af762f;
+}
+
+footer a, footer i{
+    color: black;
+    padding-left: 5px;
+    text-shadow: 0 0 5px #22a1d3;
+}
+
+#header img {
+    width:0; 
+    height: 0; 
+    position: absolute; 
+    z-index: -999;
+}
