@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Technical Documentation Page</title>
+</head>
+
+<body>
+    <nav id="navbar"
+        class="navbar navbar-expand-lg d-flex flex-column align-items-start text-light bg-dark navbar-expand-sm">
+        <div class="container-fluid flex-column">
+            <header>
+                <a class="navbar-brand mt-5" href="#">Laravel</a>
+            </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Meet_Laravel">Meet Laravel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Your_First_Laravel_Project">Your First Laravel Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Installation_Via_Composer">Installation Via Composer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Initial_Configuration">Initial Configuration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Next_Steps">Next Steps</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Meet_Laravel">
+            <header>Meet Laravel</header>
+            <p>
+                Laravel is a web application framework with expressive, elegant
+                syntax. A web framework provides a structure and starting point for
+                creating your application, allowing you to focus on creating something
+                amazing while we sweat the details.
+            </p>
+            <p>
+                Laravel strives to provide an amazing developer experience while
+                providing powerful features such as thorough dependency injection, an
+                expressive database abstraction layer, queues and scheduled jobs, unit
+                and integration testing, and more.
+            </p>
+            <p>
+                Whether you are new to PHP or web frameworks or have years of
+                experience, Laravel is a framework that can grow with you. We'll help
+                you take your first steps as a web developer or give you a boost as
+                you take your expertise to the next level. We can't wait to see what
+                you build.
+            </p>
+        </section>
+        <section class="main-section" id="Your_First_Laravel_Project">
+            <header>Your First Laravel Project</header>
+            <p>
+                We want it to be as easy as possible to get started with Laravel.
+                There are a variety of options for developing and running a Laravel
+                project on your own computer. While you may wish to explore these
+                options at a later time, Laravel provides Sail, a built-in solution
+                for running your Laravel project using Docker.
+            </p>
+            <p>
+                Docker is a tool for running applications and services in small,
+                light-weight "containers" which do not interfere with your local
+                computer's installed software or configuration. This means you don't
+                have to worry about configuring or setting up complicated development
+                tools such as web servers and databases on your personal computer. To
+                get started, you only need to install Docker Desktop.
+            </p>
+            <p>
+                Laravel Sail is a light-weight command-line interface for interacting
+                with Laravel's default Docker configuration. Sail provides a great
+                starting point for building a Laravel application using PHP, MySQL,
+                and Redis without requiring prior Docker experience.
+            </p>
+        </section>
+        <section class="main-section" id="Installation_Via_Composer">
+            <header>Installation Via Composer</header>
+            <p>
+                If your computer already has PHP and Composer installed, you may
+                create a new Laravel project by using Composer directly. After the
+                application has been created, you may start Laravel's local
+                development server using the Artisan CLI's serve command:
+            </p>
+            <code>
+                composer create-project laravel/laravel example-app<br />
+                cd example-app<br />
+                php artisan serve<br />
+            </code>
+        </section>
+        <section class="main-section" id="Initial_Configuration">
+            <header>Initial Configuration</header>
+            <p>
+                All of the configuration files for the Laravel framework are stored in
+                the config directory. Each option is documented, so feel free to look
+                through the files and get familiar with the options available to you.
+            </p>
+            <p>
+                Laravel needs almost no additional configuration out of the box. You
+                are free to get started developing! However, you may wish to review
+                the config/app.php file and its documentation. It contains several
+                options such as timezone and locale that you may wish to change
+                according to your application.
+            </p>
+        </section>
+        <section class="main-section" id="Next_Steps">
+            <header>Next Steps</header>
+            <p>
+                Now that you have created your Laravel project, you may be wondering
+                what to learn next. First, we strongly recommend becoming familiar
+                with how Laravel works by reading the following documentation:
+            </p>
+            <ul>
+                <li>Request Lifecycle</li>
+                <li>Configuration</li>
+                <li>Directory Structure</li>
+                <li>Service Container</li>
+                <li>Facades</li>
+            </ul>
+            <p>
+                How you want to use Laravel will also dictate the next steps on your
+                journey. There are a variety of ways to use Laravel, and we'll explore
+                two primary use cases for the framework below.
+            </p>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

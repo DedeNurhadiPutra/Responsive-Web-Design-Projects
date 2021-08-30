@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: 'Besley', serif;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    width: 250px;
+    height: 100vh;
+    transition: 0.4s;
+}
