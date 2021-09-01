@@ -1,18 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
-body {
-    display: flex;
-    font-family: 'Besley', serif;
+html body {
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
+    line-height: 2.2;
+    color: rgb(231, 232, 242);
+    background-color: #171923;
 }
 
 #navbar {
-    width: 250px;
+    width: 280px;
     height: 100vh;
     transition: 0.4s;
+    position: fixed;
+    background-color: #12141C;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#navbar .container-fluid {
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.fab {
+    padding: 10px;
+}
+
+nav header,
+a {
+    text-decoration: none;
+    color: #FF2D20 !important;
+}
+
+main header {
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+nav header {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+main {
+    margin-left: 290px;
+    padding: 10px 100px;
+}
+
+main h1 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FF2D20;
+    margin-top: 50px;
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+section header {
+    margin-bottom: 20px;
+}
+
+
+/* Media Query */
+@media (max-width: 767.98px) {
+    main {
+        margin-left: 0;
+        padding: 60px;
+    }
+
+    #navbar {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    #navbar .container-fluid {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    section,
+    h1 {
+        padding-top: 5rem;
+    }
+
+    main h1 {
+        margin-top: 0;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    p {
+        text-align: justify;
+    }
 }

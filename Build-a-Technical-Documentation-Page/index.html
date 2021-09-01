@@ -7,28 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <title>Technical Documentation Page</title>
 </head>
 
 <body>
-    <nav id="navbar"
-        class="navbar navbar-expand-lg d-flex flex-column align-items-start text-light bg-dark navbar-expand-sm">
-        <div class="container-fluid flex-column">
+    <nav id="navbar" class="navbar navbar-expand-lg text-light navbar-dark navbar-expand-sm">
+        <div class="container-fluid">
             <header>
-                <a class="navbar-brand mt-5" href="#">Laravel</a>
+                <i class="fab fa-laravel"></i>Laravel
             </header>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav d-flex flex-column mt-5 w-100">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav d-flex flex-column w-100">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#Meet_Laravel">Meet Laravel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Your_First_Laravel_Project">Your First Laravel Project</a>
+                        <a class="nav-link" href="#Your_First_Laravel_Project">Your First Laravel
+                            Project</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Installation_Via_Composer">Installation Via Composer</a>
@@ -44,6 +47,7 @@
         </div>
     </nav>
     <main id="main-doc">
+        <h1 class="text-center">Welcome</h1>
         <section class="main-section" id="Meet_Laravel">
             <header>Meet Laravel</header>
             <p>
@@ -98,10 +102,19 @@
                 application has been created, you may start Laravel's local
                 development server using the Artisan CLI's serve command:
             </p>
+            <code>composer create-project laravel/laravel</code>
+            <code>example-app<br></code>
+            <code>cd example-app<br></code>
+            <code>php artisan serve<br></code>
+            <br>
+            <p>
+                Or, you may install the Laravel Installer as a global Composer dependency:
+            </p>
             <code>
-                composer create-project laravel/laravel example-app<br />
-                cd example-app<br />
-                php artisan serve<br />
+                composer global require laravel/installer laravel new example-app<br>
+                cd example-app<br>
+                php artisan serve<br>
+                <br>
             </code>
         </section>
         <section class="main-section" id="Initial_Configuration">
@@ -143,6 +156,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
