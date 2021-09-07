@@ -1,0 +1,87 @@
+ul#navbar li a.active {
+    color: white;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+svg {
+    position: sticky;
+    z-index: 1;
+}
+
+.jumbotron {
+    padding-top: 7rem;
+    background-image: url(https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.jumbotron img {
+    position: sticky;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.jumbotron h1,
+.jumbotron p {
+    position: relative;
+    left: auto;
+    right: auto;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.divider1 {
+    border-bottom: 1px solid #000;
+    width: 10%;
+    margin: auto;
+}
+
+.divider2 {
+    padding-top: 1em;
+    border-bottom: 1px solid #000;
+    width: 5%;
+    margin: auto;
+}
+
+#projects {
+    background-color: #e2edff;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+}
+
+.card,
+.card img {
+    border-radius: 5%;
+}
+
+footer * {
+    color: white;
+    font-weight: bold;
+}
+
+.wrapper a {
+    font-size: 2em;
+    padding-right: 10px;
+}
+
+.wrapper a i {
+    transition: transform 0.5s ease-in-out;
+}
+
+.wrapper a i:hover {
+    transform: scale(1.5);
+}
+
+@media (max-width: 767.98px) {
+    .jumbotron {
+        height: auto;
+    }
+}
